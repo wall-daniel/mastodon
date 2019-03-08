@@ -48,7 +48,7 @@
     = f.input :show_staff_badge, as: :boolean, wrapper: :with_label, label: t('admin.settings.show_staff_badge.title'), hint: t('admin.settings.show_staff_badge.desc_html')
 
   .fields-group
-    = f.input :open_registrations, as: :boolean, wrapper: :with_label, label: t('admin.settings.registrations.open.title'), hint: t('admin.settings.registrations.open.desc_html')
+    = f.input :registrations_mode, collection: %w(open approved none), wrapper: :with_label, label: t('admin.settings.registrations_mode.title'), include_blank: false
 
   .fields-group
     = f.input :open_deletion, as: :boolean, wrapper: :with_label, label: t('admin.settings.registrations.deletion.title'), hint: t('admin.settings.registrations.deletion.desc_html')
